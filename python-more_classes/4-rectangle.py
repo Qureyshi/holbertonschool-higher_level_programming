@@ -22,7 +22,7 @@ class Rectangle:
 
     def __repr__(self):
         """returns presentation of rectangle using # chars"""
-        return "Rectangle(" + str(self.__width) + ", " +  str(self__height) + ")"
+        return "Rectangle(" + str(self.__width) + ", " +  str(self.__height) + ")"
 
     @property
     def width(self):
