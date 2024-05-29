@@ -9,7 +9,7 @@ class Rectangle:
         """Initializes object"""
         self.width = width
         self.height = height
-        self.number_of_instances += 1
+        self.__class__.number_of_instances += 1
 
     def __str__(self):
         """returns presentation of rectangle using # chars"""
