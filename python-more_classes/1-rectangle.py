@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """Module rect class"""
 
+
 class Rectangle:
     """rect class"""
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         """Initializes object"""
         self.width = width
         self.height = height
