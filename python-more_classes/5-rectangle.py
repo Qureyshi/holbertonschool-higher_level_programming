@@ -26,7 +26,7 @@ class Rectangle:
 
     def __del__(self):
         """returns presentation of rectangle using # chars"""
-        return "Bye rectangle..."
+        print("Bye rectangle...")
 
     @property
     def width(self):
