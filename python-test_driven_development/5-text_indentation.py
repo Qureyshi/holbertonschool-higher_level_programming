@@ -13,6 +13,7 @@ def text_indentation(text):
         if i == "." or i == "?" or i == ":" :
             if i != text[-1]:
                 print(i)
+                print("\n\n")
         else:
             print(i, end="")
     print("\n")
