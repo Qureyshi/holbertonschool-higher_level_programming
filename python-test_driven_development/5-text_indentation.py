@@ -6,6 +6,7 @@ def text_indentation(text):
     """func"""
     for i in text:
         if i == "." or i == "?" or i == ":" :
-            print(i + "\n\n")
+            if i != st[-1]:
+                print(i + "\n\n")
         else:
             print(i, end="")
