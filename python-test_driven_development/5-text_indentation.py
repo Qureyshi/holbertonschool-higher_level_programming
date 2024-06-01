@@ -4,9 +4,14 @@
 
 def text_indentation(text):
     """func"""
+    new_text = ""
+    new_text = text.replace(". ", ".")
+    new_text = new_text.replace(": ", ":")
+    new_text = new_text.replace("? ", "?")
+
     for i in text:
         if i == "." or i == "?" or i == ":" :
             if i != text[-1]:
-                print(i + "\n")
+                print(i)
         else:
             print(i, end="")
