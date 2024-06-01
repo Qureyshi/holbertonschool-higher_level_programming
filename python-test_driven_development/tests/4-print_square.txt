@@ -1,0 +1,18 @@
+>>> print_square = __import__('4-print_square').print_square
+
+>>> print_square(4)
+####
+####
+####
+####
+
+>>> print_square("a")
+
+
+>>> print_square("a")
+
+
+>>> print_square(-2)
+
+
+>>> print_square()
