@@ -15,4 +15,4 @@ def text_indentation(text):
                 print(i)
         else:
             print(i, end="")
-            print("\n")
+    print("\n")
