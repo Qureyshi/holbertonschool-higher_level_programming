@@ -7,14 +7,17 @@ class CustomObject:
         self.age = age
         self.is_student = is_student
 
-    def display(self)
+    def display(self):
         print(f"Name: {self.name}")
         print(f"Age: {self.age}")
         print(f"Is Student: {self.is_student}")
 
     def serialize(self, filename):
-        """Serialize the current instance of the object"""
+        """
+        Serialize the current instance of the object and save it to the provided filename.
 
+        :param filename: The filename of the output file
+        """
         try:
             with open(filename, 'wb') as f:
                 pickle.dump(self, f)
@@ -23,7 +26,12 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        """CustomObject or None if an error occurs"""
+        """
+        Load and return an instance of CustomObject from the provided filename.
+
+        :param filename: The filename of the input file
+        :return: An instance of CustomObject or None if an error occurs
+        """
         try:
             with open(filename, 'rb') as f:
                 return pickle.load(f)
